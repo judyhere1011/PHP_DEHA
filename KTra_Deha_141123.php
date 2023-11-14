@@ -14,7 +14,7 @@ echo "<h2> Tự luận </h2>";
 // Câu 1: 
 echo "<b> Câu 1 <br> </b>";
 // Yêu cầu 1: Tạo một hàm generateFibonacci nhận một số nguyên dương n và trả về dãy số Fibonacci đầu tiên có n phần tử.
-function fibonacci($n) {
+function generateFibonacci($n) {
     $fibArray = array(0, 1);
 
     for ($i = 2; $i < $n; $i++) {
@@ -34,26 +34,28 @@ function inFibonacci($fibArray) {
 $n = 10;
 $fibArray = generateFibonacci($n);
 inFibonacci($fibArray);
+?>
 
-// CSS 
+<html> 
 <style>
     .fibonacci {
-        color: blue; 
+    color: blue; 
     }
 </style>
-
+</html>
+<?php 
 echo "<hr>"
+?>
 
-// Câu 2: 
-echo "<b> Câu 2: <br> </b>";
 <?php
-
+// Câu 2:
+echo "<b> Câu 2: <br> </b>";
 // Tạo một mảng kết hợp chứa thông tin về học sinh
 $students = array(
     array('id' => 1, 'name' => 'Hoang Thi Mai', 'age' => 20, 'grade' => 90, 'address' => 'Ha Noi', 'sdt' => '0123456789'),
     array('id' => 2, 'name' => 'Hoang Thi Quynh Nga', 'age' => 20, 'grade' => 92, 'address' => 'Thai Binh', 'sdt' => '0123456789'),
-    array('id' => 3, 'name' => 'Chu Thi Hong Nhung', 'age' => 20, 'grade' => 92, 'address' => 'Hung Yen', 'sdt' => '0123456789'),
-    array('id' => 4, 'name' => 'Do Van Long', 'age' => 20, 'grade' => 92, 'address' => 'Ha Noi', 'sdt' => '0123456789')
+    array('id' => 3, 'name' => 'Chu Thi Hong Nhung', 'age' => 20, 'grade' => 90, 'address' => 'Hung Yen', 'sdt' => '0123456789'),
+    array('id' => 4, 'name' => 'Do Van Long', 'age' => 20, 'grade' => 90, 'address' => 'Ha Noi', 'sdt' => '0123456789')
 );
 
 // Hiển thị thông tin của tất cả học sinh trong mảng
